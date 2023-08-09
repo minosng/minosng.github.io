@@ -1,0 +1,87 @@
+
+<HTML>
+<HEAD>
+   <TITLE>Minos Garofalakis -- SIGMOD'03</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#FFFFFF" >
+
+<HR>
+<h3><center>"Processing Set Expressions over Continuous Update Streams"</center></h3>
+<h4><center>by 
+Sumit Ganguly,
+Minos Garofalakis, and
+<A HREF="http://www.bell-labs.com/user/rastogi/">Rajeev Rastogi</A>.<BR>
+<i>Proceedings of <A HREF="http://www.db.ucsd.edu/SIGMODPODS03/">ACM SIGMOD'2003</A></i>,
+San Diego, California, June 2003, pp. 265-276. 
+</center></h4>
+<BR><HR>
+
+
+<b><h4>Abstract</h4></b>
+There is growing interest in algorithms for processing and
+querying continuous data streams (i.e., data that is seen
+only once in a fixed order) with limited memory resources.
+In its most general form, a data stream is actually an <i>update</i>
+stream, i.e., comprising data-item deletions as well as insertions.
+Such massive update streams arise naturally in several application
+domains (e.g., monitoring of large IP network installations, or
+processing of retail-chain transactions).
+
+Estimating the cardinality of set expressions defined over several
+(perhaps, distributed) update streams is perhaps one of the most
+fundamental query classes of interest; as an example, such a query may ask
+"what is the number of distinct IP source addresses seen in passing
+packets from both router R1 and R2 but not router R3?".
+Earlier work has only addressed very restricted forms of this problem,
+focusing solely on the special case of <i>insert-only</i> streams and
+specific operators (e.g., union).  In this paper, we propose the <i>first</i>
+space-efficient algorithmic solution for estimating the cardinality of
+full-fledged set expressions over general update streams. Our estimation
+algorithms are probabilistic in nature and rely on a novel, hash-based
+synopsis data structure, termed <i>"2-level hash sketch"</i>.
+We demonstrate how our 2-level hash sketch synopses can be used to 
+provide low-error, high-confidence
+estimates for the cardinality of set expressions (including operators
+such as set union, intersection, and difference) over continuous update
+streams, using only small space and small processing time per update.
+Furthermore, our estimators never require rescanning or resampling
+of past stream items, regardless of the number of deletions in the stream.
+We also present lower bounds for the problem, demonstrating that the space
+usage of our estimation algorithms is within small factors of the optimal.
+Preliminary experimental results verify the effectiveness of our approach.
+
+
+<BR>
+<h3><center>
+[
+camera-ready paper 
+<A HREF="../Papers/sigmod03-cam.pdf"><i>(pdf)</i></a> 
+|
+ journal version
+ <A HREF="../Papers/vldbj04.pdf"><i>(pdf)</i></a>
+ (in The VLDB Journal)
+|
+Sumit's talk slides
+<A HREF="../Talks/Others/sigmod03-slides.ppt"><i>(ppt)</i></a>
+]
+</center></h3>
+
+
+<BR><i>
+<b><u>Copyright &copy; 2003, Association for Computing Machinery, Inc. (ACM).</u></b>
+Permission to make digital/hard copy of all or part of this material without
+fee is granted provided that copies are not made or distributed for profit or
+commercial advantage, the ACM copyright/server notice, the title of the
+publication and its date appear, and notice is given that copying is by
+permission of the Association for Computing Machinery, Inc. (ACM).
+To copy otherwise, to republish, to post on servers or to redistribute to lists,
+requires prior specific permission and/or a fee.
+</i>
+
+
+<BR><BR><HR>
+
+
+</BODY>                                                                         
+</HTML>
+

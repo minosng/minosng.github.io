@@ -1,0 +1,70 @@
+
+<HTML>
+<HEAD>
+   <TITLE>Minos Garofalakis -- DMKD'2001</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#FFFFFF" >
+
+
+<HR>
+<h3><center>"Data Mining Meets Network Management: The NEMESIS Project"</center></h3>
+<h4><center>by 
+Minos Garofalakis and
+<A HREF="http://www.bell-labs.com/user/rastogi">Rajeev Rastogi</A>.<BR>
+<i>Proceedings of <A HREF="http://www.cs.cornell.edu/johannes/dmkd2001.htm">DMKD'2001</A></i>,
+Santa Barbara, California, May 2001.</center></h4>
+<BR><HR>
+
+
+<b><h4>Abstract</h4></b>
+Modern communication networks generate large amounts of operational
+data, including traffic and utilization statistics and alarm/fault data
+at various levels of detail.
+These massive collections of network-management data can grow
+in the order of several Terabytes per year, and typically hide "knowledge"
+that is crucial to some of the key tasks involved in effectively managing 
+a communication network (e.g., capacity planning and traffic engineering).
+In this short paper, we provide an overview of some of our recent and 
+ongoing work  in the context of the NEMESIS  project at Bell Laboratories
+that aims to develop novel data warehousing and mining technology for the 
+effective storage, exploration, and analysis of massive network-management
+data sets.
+We first give some highlights of our work on 
+Model-Based Semantic Compression (MBSC), a novel data-compression
+framework that takes advantage of attribute semantics and data-mining
+models to perform lossy compression of massive network-data tables.
+We discuss the architecture and some of the key algorithms
+underlying SPARTAN,  a model-based semantic compression system
+that exploits predictive data correlations and  prescribed
+error tolerances for individual attributes to construct concise
+and accurate  Classification and Regression Tree (CaRT) models
+for entire columns of a table.
+We also summarize some of our ongoing work on warehousing and analyzing 
+network-fault data and discuss our vision of how data-mining techniques 
+can be employed to help automate and improve fault-management in modern 
+communication networks.
+More specifically, we describe the two key components of modern fault-management
+architectures, namely the event-correlation and the root-cause analysis
+engines, and propose the use of mining ideas for the automated inference and 
+maintenance of the models that lie at the core of these components based on 
+warehoused network data.
+
+
+<BR>
+<h3><center>
+[
+ paper
+ <A HREF="../Papers/dmkd01.ps.gz"><i>(ps.gz)</i></a>
+ |
+ my talk slides
+ <A HREF="../Talks/cmu01.ppt.gz"><i>(ppt.gz)</i></a>
+]
+</center></h3>                                                                           
+
+
+<BR><BR><HR>
+
+
+</BODY>                                                                         
+</HTML>
+

@@ -1,0 +1,78 @@
+
+<HTML>
+<HEAD>
+   <TITLE>Minos N. Garofalakis -- SIGMOD'96</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#FFFFFF" >
+
+
+<HR>
+<h3><center>"Multi-dimensional Resource Scheduling for Parallel Queries"</center></h3>
+<h4><center>by Minos N. Garofalakis and  <A HREF="http://www.di.uoa.gr/~yannis/">Yannis E. Ioannidis</A>.<BR> 
+<i>Proceedings of <A HREF="http://www.informatik.uni-trier.de/~ley/db/conf/sigmod/sigmod96.html">ACM SIGMOD'96</A></i>,
+Montreal, Canada, June 1996, pp. 365-376.</center></h4>
+<BR><HR>
+
+
+<b><h4>Abstract</h4></b>
+Scheduling query execution plans is an important component of query optimization
+in parallel database systems.  The problem is particularly complex in a  shared-
+nothing execution environment, where each system node represents a collection of
+time-shareable resources (e.g.,  CPU(s), disk(s), etc.)  and  communicates  with
+other  nodes  only  by   message-passing.    Significant   research  effort  has
+concentrated on only a  subset of the various forms of  intra-query  parallelism
+so that scheduling and synchronization is simplified. In addition, most previous
+work has focused its attention  on  one-dimensional  models  of  parallel  query
+scheduling, effectively ignoring the potential benefits of resource sharing.
+<BR>
+In this paper, we develop an approach that is more general  in  both directions,
+capturing all forms of intra-query  parallelism and exploiting sharing of multi-
+dimensional  resource  nodes  among  concurrent  plan  operators.   This  allows
+scheduling a set of independent query tasks  (i.e.,  operator pipelines)  to  be
+seen as an instance of the multi-dimensional bin-design problem.   Using a novel
+quantification of  coarse  grain  parallelism,   we present  a  list  scheduling
+heuristic algorithm that is  provably  near-optimal in the class of coarse grain
+parallel executions (with a  worst-case  performance  ratio that depends on  the
+number of resources per node and the granularity parameter). We then extend this
+algorithm to handle the operator precedence constraints in a bushy query plan by
+splitting  the  execution  of  the plan into  synchronized  phases.  Preliminary
+performance  results  confirm  the  effectiveness  of our  scheduling  algorithm
+compared both to previous approaches and  the  optimal  solution.   Finally,  we
+present a technique that allows us to relax the  coarse granularity  restriction
+and obtain a list scheduling method that is  provably near-optimal  in the space
+of all possible parallel schedules.
+
+<BR>
+<h3><center>
+[
+ camera-ready paper
+ <A HREF="../Papers/sigmod96-cam.pdf"><i>(pdf)</i></a>
+ <A HREF="../Papers/sigmod96-cam.ps.gz"><i>(ps.gz)</i></a>
+ | 
+ extended version
+ <A HREF="../Papers/sigmod96-full.ps.gz"><i>(ps.gz)</i></a>
+ |
+ my talk slides 
+ <A HREF="../Talks/sigmod96-slides.ps.gz"><i>(ps.gz)</i></a>
+]
+</center></h3>                                                                           
+
+
+<BR><i>
+<b><u>Copyright &copy; 1996, Association for Computing Machinery, Inc. (ACM).</u></b>
+Permission to make digital/hard copy of all or part of this material without
+fee is granted provided that copies are not made or distributed for profit or
+commercial advantage, the ACM copyright/server notice, the title of the 
+publication and its date appear, and notice is given that copying is by
+permission of the Association for Computing Machinery, Inc. (ACM). 
+To copy otherwise, to republish, to post on servers or to redistribute to lists,
+requires prior specific permission and/or a fee.
+</i>
+
+
+<BR><BR><HR>
+
+
+</BODY>                                                                         
+</HTML>
+

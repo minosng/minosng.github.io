@@ -1,0 +1,86 @@
+
+<HTML>
+<HEAD>
+   <TITLE>Minos Garofalakis -- EDBT'04 (STREAM MULTI-QUERY PROCESSING)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#FFFFFF" >
+
+
+<HR>
+<h3><center>"Sketch-Based Multi-Query Processing over Data Streams"</center></h3>
+<h4><center> by 
+<A HREF="http://www.cise.ufl.edu/~adobra/">Alin Dobra</A>,
+Minos Garofalakis,
+<A HREF="http://www.cs.cornell.edu/johannes/">Johannes Gehrke</A>, and
+<A HREF="http://www.bell-labs.com/user/rastogi/">Rajeev Rastogi</A>.<BR>
+<i>Proceedings of <A HREF="http://www.edbt04.gr/">EDBT'2004</A></i>,
+Heraklion-Crete, Greece, March 2004, pp. 551-568.</center></h4>
+<BR><HR>
+
+
+
+
+<b><h4>Abstract</h4></b>
+Recent years have witnessed an increasing interest in designing
+algorithms for querying and analyzing streaming data (i.e., data
+that is seen only once in a fixed order) with only limited memory.
+Providing (perhaps approximate) answers to queries over such
+continuous data streams is a crucial requirement for many
+application environments; examples include large telecom and
+IP network installations where performance data from different
+parts of the network needs to be continuously collected and
+analyzed.
+
+Randomized techniques, based on computing small "sketch" synopses
+for each stream, have recently been shown to be a very effective tool
+for approximating the result of a single SQL query over streaming data
+tuples. In this paper, we investigate the problems arising when
+data-stream sketches are used to process <i>multiple</i> such queries
+concurrently. We demonstrate that, in the presence of multiple query
+expressions, intelligently <i>sharing sketches</i> among concurrent
+query evaluations can result in substantial improvements in the
+utilization of the available sketching space and the quality of the
+resulting approximation error guarantees.
+We provide necessary and sufficient conditions
+for multi-query sketch sharing that guarantee the correctness of the
+result-estimation process.
+We also prove that optimal sketch sharing typically gives rise to
+NP-hard questions, and we propose novel heuristic algorithms for
+finding good sketch-sharing configurations in practice.
+Results from our experimental study with realistic workloads verify
+the effectiveness of our approach, clearly demonstrating the benefits
+of our sketch-sharing methodology.
+
+
+
+
+<BR>
+<h3><center>
+[
+camera-ready paper
+<A HREF="../Papers/edbt04mqp-cam.pdf"><i>(pdf)</i></a> 
+ |
+my talk slides
+<A HREF="../Talks/edbt04mqp-slides.ppt"><i>(ppt)</i></a>
+]
+</center></h3>
+
+
+
+<BR><i>
+<b><u>Copyright &copy; 2004, Springer-Verlag.</u></b>
+The original publication is available on LINK at
+<A HREF="http://link.springer.de">http://link.springer.de</A>. Please use the
+appropriate URL and/or DOI for the article in LINK. Articles disseminated via
+LINK are indexed, abstracted and referenced by many abstracting and information
+services, bibliographic networks, subscription agencies, library networks, and
+consortia.
+</i>
+
+
+<BR><BR><HR>
+
+
+</BODY>                                                                         
+</HTML>
+

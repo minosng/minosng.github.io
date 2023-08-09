@@ -1,0 +1,92 @@
+
+<HTML>
+<HEAD>
+   <TITLE>Minos Garofalakis -- INFOCOM'02</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#FFFFFF" >
+
+
+
+<HR>
+<h3><center>"Optimal Configuration of OSPF Aggregates"</center></h3>
+<h4><center> by 
+<A HREF="http://www.bell-labs.com/user/rastogi/">Rajeev Rastogi</A>, 
+<A HREF="http://www.cs.kent.edu/~yuri/">Yuri Breitbart</A>,
+Minos Garofalakis, and 
+<A HREF="http://www.cse.iitd.ernet.in/~amitk/">Amit Kumar</A>.<BR>
+<i>Proceedings of <A HREF="http://www.ieee-infocom.org/2002/">IEEE INFOCOM'2002</A></i>,
+New York City, New York, June 2002, pp. 874-882. 
+</center></h4>
+<BR><HR>
+
+
+<b><h4>Abstract</h4></b>
+<i>Open Shortest Path First (OSPF)</i> is a popular protocol for routing
+within an Autonomous System (AS) domain.
+In order to scale for large networks containing hundreds and thousands
+of subnets, OSPF supports a two-level hierarchical routing scheme through
+the use of <i>OSPF areas</i>.
+Subnet addresses within an area are aggregated, and this aggregation
+is a crucial requirement for scaling OSPF
+to large AS domains, as it results in significant reductions in routing table
+sizes, smaller link-state databases, and less network traffic to synchronize
+the router link-state databases.
+On the other hand, address aggregation also implies loss of information
+about the length of the shortest path to each subnet,
+which in turn, can lead to suboptimal routing.
+
+In this paper, we address the important practical problem of configuring
+OSPF aggregates to minimize the error in OSPF shortest path computations
+due to subnet aggregation.
+We first develop an optimal dynamic programming algorithm that,
+given an upper bound k on the number of aggregates to be advertised
+and a weight-assignment function for the aggregates, computes the
+k aggregates that result in the minimum cumulative error in the
+shortest path computations for all source-destination subnet pairs.
+Subsequently, we tackle the problem of assigning weights to OSPF
+aggregates such that the cumulative error in the computed shortest
+paths is minimized.
+We demonstrate that, while for certain special cases (e.g., unweighted cumulative
+error) efficient optimal algorithms for the weight-assignment problem can be devised,
+the general problem itself is NP-hard.
+Consequently, we have to rely on search heuristics to solve the weight-assignment
+problem.
+To the best of our knowledge, our work is the first to address the algorithmic
+issues underlying the configuration of OSPF aggregates and to propose efficient
+configuration algorithms that are <i>provably optimal</i> for many practical
+scenarios.
+
+
+<BR>
+<h3><center>
+[
+camera-ready paper
+<A HREF="../Papers/infocom02-cam.pdf"><i>(pdf)</i></a>
+<A HREF="../Papers/infocom02-cam.ps.gz"><i>(ps.gz)</i></a>
+|
+journal version
+<A HREF="../Papers/ton03.pdf"><i>(pdf)</i></a>
+(in IEEE/ACM Transactions on Networking)
+|
+Rajeev's talk slides
+<A HREF="../Talks/Others/infocom02-slides.ppt.gz"><i>(ppt.gz)</i></a>
+]
+</center></h3>
+
+
+<BR><i>
+<b><u>Copyright &copy; 2002, IEEE.</u></b>
+Personal use of this material is permitted. However, permission to 
+reprint/republish this material for advertising or promotional purposes or for
+creating new collective works for resale or redistribution to servers or lists,
+or to reuse any copyrighted component of this work in other works must be 
+obtained from the IEEE.
+</i>
+
+
+<BR><BR><HR>
+
+
+</BODY>                                                                         
+</HTML>
+

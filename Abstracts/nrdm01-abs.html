@@ -1,0 +1,72 @@
+
+<HTML>
+<HEAD>
+   <TITLE>Minos Garofalakis -- NRDM'2001</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#FFFFFF" >
+
+
+<HR>
+<h3><center>"Model-Based Semantic Compression for Network-Data Tables"</center></h3>
+<h4><center>by 
+<A HREF="http://www.cs.duke.edu/~shivnath/">Shivnath Babu</A>,
+Minos Garofalakis,
+<A HREF="http://www.bell-labs.com/user/rastogi">Rajeev Rastogi</A>, and
+<A HREF="http://www.bell-labs.com/user/avi/">Avi Silberschatz</A>.<BR>
+<i>Proceedings of <A HREF="http://www.research.att.com/conf/nrdm2001/">NRDM'2001</A></i>,
+Santa Barbara, California, May 2001.</center></h4>
+<BR><HR>
+
+
+<b><h4>Abstract</h4></b>
+While a variety of lossy compression schemes have been developed
+for certain forms of digital data (e.g., images, audio, video), 
+the area of lossy compression techniques for arbitrary data tables
+has been left relatively unexplored. Nevertheless, such techniques 
+are clearly motivated  by the ever-increasing data collection rates
+of modern enterprises and the need for effective, guaranteed-quality
+approximate answers to queries over massive relational data sets.
+In this paper, we propose  Model-Based Semantic Compression (MBSC),
+a novel data-compression framework that takes advantage of attribute
+semantics and data-mining models to perform lossy compression of 
+massive data tables. 
+We describe the architecture and some of the key algorithms 
+underlying SPARTAN,  a model-based semantic compression system 
+that exploits predictive data correlations and  prescribed
+error tolerances for individual attributes to construct concise 
+and accurate  Classification and Regression Tree (CaRT) models 
+for entire columns of a table.
+More precisely, SPARTAN selects a certain subset of attributes
+for which no values are explicitly stored in the compressed table;
+instead, concise CaRTs  that predict these values (within the
+prescribed error bounds) are maintained.
+To restrict the huge search space and construction cost of possible
+CaRT predictors, SPARTAN employs sophisticated learning techniques 
+and novel combinatorial optimization algorithms.
+Our experimentation with several real-life data sets has offered convincing
+evidence of the effectiveness of SPARTAN's model-based approach --  
+SPARTAN  is able to consistently yield substantially better
+compression ratios than existing semantic or syntactic compression tools
+(e.g., gzip) while utilizing only small data samples for model inference.
+Several promising directions for future research and possible applications
+of MBSC in the context of network management are identified and discussed.
+
+
+<BR>
+<h3><center>
+[
+ paper
+ <A HREF="../Papers/nrdm01.ps.gz"><i>(ps.gz)</i></a> 
+ |
+ Shivnath's talk slides
+ <A HREF="../Talks/Others/nrdm01-slides.ppt.gz"><i>(ppt.gz)</i></a>
+]
+</center></h3>                                                                           
+
+
+<BR><BR><HR>
+
+
+</BODY>                                                                         
+</HTML>
+

@@ -1,0 +1,76 @@
+
+<HTML>
+<HEAD>
+   <TITLE>Minos Garofalakis -- VLDB'02 (XSKETCH)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#FFFFFF" >
+
+
+<HR>
+<h3><center>
+"Structure and Value Synopses for XML Data Graphs"
+</center></h3>
+<h4><center>by 
+<A HREF="http://www.cs.ucsc.edu/~alkis/">Neoklis Polyzotis</A> and
+Minos Garofalakis.<BR>
+<i>Proceedings of <A HREF="http://www.cs.ust.hk/vldb2002/">VLDB'2002</A></i>,
+Hong Kong, China, August 2002, pp. 466-477.
+</center></h4>
+<BR><HR>
+
+
+<b><h4>Abstract</h4></b>
+All existing proposals for querying XML (e.g., XQuery) rely on a
+pattern-specification language  that allows
+(1) <i>path navigation and branching through the label structure</i> of the XML
+    data graph, and
+(2) <i>predicates on the values</i> of specific path/branch nodes, in order to
+reach the desired data elements.
+Optimizing such queries depends crucially on the existence of concise synopsis
+structures that enable accurate compile-time selectivity estimates for
+complex path expressions over graph-structured XML data.
+In this paper, we extend our earlier work on structural XSketch 
+synopses and we propose an (augmented) XSketch synopsis model that exploits
+localized stability and value-distribution summaries (e.g.,
+histograms) to accurately capture the
+complex correlation patterns that can exist between and across path structure
+and element values in the data graph.
+We develop a systematic XSketch estimation framework for complex path
+expressions with value predicates
+and we propose an efficient heuristic algorithm based on
+greedy forward selection for building an effective XSketch for a given
+amount of space (which is, in general, an NP-hard optimization problem).
+Implementation results with both synthetic and real-life data sets verify the
+effectiveness of our approach.
+
+
+<BR>
+<h3><center>
+[
+ camera-ready paper
+ <A HREF="../Papers/vldb02xsketch-cam.pdf"><i>(pdf)</i></a> 
+ <A HREF="../Papers/vldb02xsketch-cam.ps.gz"><i>(ps.gz)</i></a> 
+ |
+ Alkis' talk slides
+ <A HREF="../Talks/Others/vldb02xsketch-slides.ppt.gz"><i>(ppt.gz)</i></a>
+]
+</center></h3>
+
+
+<BR><i>
+<b><u>Copyright &copy; 2002, VLDB Endowment.</u></b>
+Permission to copy without fee all or part of this material is granted provided
+that the copies are not made or distributed for direct commercial advantage, the
+VLDB copyright notice and the title of the publication and its date appear, and
+notice is given that copying is by permission of the Very Large Data Base
+Endowment.  To copy otherwise, or to republish, requires a fee and/or special
+permission from the Endowment.
+</i>
+
+
+<BR><BR><HR>
+
+
+</BODY>                                                                         
+</HTML>
+

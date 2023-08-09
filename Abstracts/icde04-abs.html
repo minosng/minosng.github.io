@@ -1,0 +1,74 @@
+
+<HTML>
+<HEAD>
+   <TITLE>Minos Garofalakis -- ICDE'04</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#FFFFFF" >
+
+
+<HR>
+<h3><center>"Selectivity Estimation for XML Twigs"</center></h3>
+<h4><center> by 
+<A HREF="http://www.cs.ucsc.edu/~alkis/">Neoklis Polyzotis</A>,
+Minos Garofalakis, and
+<A HREF="http://www.di.uoa.gr/~yannis/">Yannis Ioannidis</A>.<BR>
+<i>Proceedings of <A HREF="http://www.cse.uconn.edu/icde04/">IEEE ICDE'2004</A></i>,
+Boston, Massachusetts, March 2004, pp. 264-275.</center></h4>
+<BR><HR>
+
+
+
+
+
+<b><h4>Abstract</h4></b>
+Twig queries represent the building blocks of declarative query languages
+over XML data. A twig query describes a complex traversal of the document
+graph and generates a set of element tuples based on the intertwined
+evaluation (i.e., join) of multiple path expressions. Estimating the result
+cardinality of twig queries or, equivalently, the number of tuples in such
+a structural (path-based) join, is a fundamental problem that arises in the
+optimization of declarative queries over XML. It is crucial, therefore,
+to develop concise synopsis structures that summarize the document
+graph and enable such selectivity estimates within the time and space
+constraints of the optimizer. In this paper, we propose novel
+summarization and estimation techniques for estimating the selectivity
+of twig queries with complex XPath expressions over tree-structured data.
+Our approach is based on the XSketch model, augmented with new types of
+distribution information for capturing complex correlation patterns across
+structural joins. Briefly, the key idea is to represent joins as points in a
+multidimensional space of path counts that capture aggregate
+information on the contents of the resulting element tuples. We
+develop a systematic framework that combines distribution information
+with appropriate statistical assumptions in order to provide
+selectivity estimates for twig queries over
+concise XSketch synopses and we describe an efficient algorithm for
+constructing an accurate summary for a given space budget. Implementation results
+with both synthetic and real-life data sets verify the effectiveness of our
+approach and demonstrate its benefits over earlier techniques.
+
+
+<BR>
+<h3><center>
+[
+camera-ready paper
+<A HREF="../Papers/icde04-cam.pdf"><i>(pdf)</i></a> 
+]
+</center></h3>
+
+
+<BR><i>
+<b><u>Copyright &copy; 2004, IEEE.</u></b>
+Personal use of this material is permitted. However, permission to 
+reprint/republish this material for advertising or promotional purposes or for
+creating new collective works for resale or redistribution to servers or lists,
+or to reuse any copyrighted component of this work in other works must be 
+obtained from the IEEE.
+</i>
+
+
+<BR><BR><HR>
+
+
+</BODY>                                                                         
+</HTML>
+

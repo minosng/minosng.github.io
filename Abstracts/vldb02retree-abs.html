@@ -1,0 +1,88 @@
+
+<HTML>
+<HEAD>
+   <TITLE>Minos Garofalakis -- VLDB'02 (RE-TREE)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#FFFFFF" >
+
+
+<HR>
+<h3><center>
+"RE-Tree: An Efficient Index Structure for Regular Expressions"
+</center></h3>
+<h4><center>by 
+<A HREF="http://www.comp.nus.edu.sg/~chancy/">Chee-Yong Chan</A>,
+Minos Garofalakis, and
+<A HREF="http://www.bell-labs.com/user/rastogi/">Rajeev Rastogi</A>.
+<BR>
+<i>Proceedings of <A HREF="http://www.cs.ust.hk/vldb2002/">VLDB'2002</A></i>,
+Hong Kong, China, August 2002, pp. 251-262.<BR>
+<i><font color=red>[** Invited to the "Best of VLDB'2002" Special Issue of
+<A HREF="http://link.springer.de/link/service/journals/00778/"><font color=red>The VLDB Journal</font></A> **]</font></i>
+</center></h4>
+<BR><HR>
+
+
+<b><h4>Abstract</h4></b>
+Due  to their expressive power, 
+Regular Expressions (REs) are quickly becoming an integral part of 
+language specifications for several important application scenarios.
+Many of these applications have to manage huge databases of RE specifications
+and need to provide an effective matching mechanism that, given an input string, 
+quickly identifies the REs in the database that match it.
+In this paper, we propose the RE-tree, a novel index structure for large
+databases of RE specifications. 
+Given an input query string, the RE-tree speeds up the retrieval of matching 
+REs by focusing the search and comparing the input string with only a small 
+fraction of REs in the database.
+Even though the RE-tree is similar in spirit to other tree-based structures that
+have been proposed for indexing multi-dimensional data, RE indexing
+is significantly more challenging since  REs typically represent infinite
+sets of strings with no well-defined notion of spatial locality.
+To address these new challenges, our RE-tree index structure relies on novel 
+measures for comparing the relative sizes of infinite regular languages.
+We also propose innovative solutions for the various RE-tree operations,
+including the effective splitting of RE-tree nodes and computing a "tight"
+bounding RE for a collection of REs.
+Finally, we demonstrate how sampling-based approximation algorithms can be used to 
+significantly speed up the performance of RE-tree operations.
+Our experimental results with synthetic data sets indicate that the RE-tree is very
+effective in pruning the search space and easily outperforms naive 
+sequential search approaches. 
+
+
+
+<BR>
+<h3><center>
+[
+camera-ready paper
+<A HREF="../Papers/vldb02retree-cam.pdf"><i>(pdf)</i></a> 
+<A HREF="../Papers/vldb02retree-cam.ps.gz"><i>(ps.gz)</i></a> 
+|
+journal version
+<A HREF="../Papers/vldbj03.pdf"><i>(pdf)</i></a>
+(in The VLDB Journal)
+|
+Chee-Yong's talk slides
+<A HREF="../Talks/Others/vldb02retree-slides.ppt.gz"><i>(ppt.gz)</i></a>
+]
+</center></h3>
+
+
+<BR><i>
+<b><u>Copyright &copy; 2002, VLDB Endowment.</u></b>
+Permission to copy without fee all or part of this material is granted provided
+that the copies are not made or distributed for direct commercial advantage, the
+VLDB copyright notice and the title of the publication and its date appear, and
+notice is given that copying is by permission of the Very Large Data Base
+Endowment.  To copy otherwise, or to republish, requires a fee and/or special
+permission from the Endowment.
+</i>
+
+
+<BR><BR><HR>
+
+
+</BODY>                                                                         
+</HTML>
+

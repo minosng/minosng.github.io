@@ -1,0 +1,88 @@
+
+<HTML>
+<HEAD>
+   <TITLE>Minos Garofalakis -- SIGMOD'04 (SECURE XML QUERYING)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#FFFFFF" >
+
+<HR>
+<h3><center>"Secure XML Querying with Security Views"</center></h3>
+<h4><center>by 
+<A HREF="http://www.bell-labs.com/user/wenfei/">Wenfei Fan</A>,
+<A HREF="http://www.comp.nus.edu.sg/~chancy/">Chee-Yong Chan</A>, and
+Minos Garofalakis.<BR>
+<i>Proceedings of <A HREF="http://www.sciences.univ-nantes.fr/irin/SIGMODPODS04/">ACM SIGMOD'2004</A></i>,
+Paris, France, June 2004, pp. 587-598.
+</center></h4>
+<BR><HR>
+
+
+
+<b><h4>Abstract</h4></b>
+The prevalent use of XML highlights the need for a generic,
+flexible access-control mechanism for XML documents that supports
+efficient and secure query access, without revealing sensitive
+information to unauthorized users. This paper introduces
+a novel paradigm for specifying XML security constraints and
+investigates the enforcement of such constraints during XML
+query evaluation. Our approach is based on the novel concept of
+<i>security views</i>, which provide for each user group
+(a) an XML view consisting of all and only the information
+that the users are authorized to access, and
+(b) a view DTD that the XML view conforms to.
+Security views effectively protect sensitive data from access
+and potential inferences by unauthorized users, and provide
+authorized users with necessary schema information to facilitate
+effective query formulation and optimization.
+We propose an efficient algorithm for deriving security view
+definitions from
+security policies (defined on the original document DTD) for different
+user groups.
+We also develop novel algorithms for XPath query rewriting and optimization
+such that queries over security views can be efficiently answered
+without materializing the views.
+Our algorithms transform a query over a security view to an
+equivalent query over the original document, and effectively prune query
+nodes by exploiting the structural properties of the document DTD in
+conjunction with approximate XPath containment tests.
+Our work is the first to study
+a flexible, DTD-based access-control model for XML and its implications
+on the XML query-execution engine.  Furthermore, it is among the first
+efforts for query rewriting and optimization in the presence of
+general DTDs for a rich class of XPath queries.
+An empirical study based on real-life
+DTDs  verifies the effectiveness of our approach.
+
+
+
+
+<BR>
+<h3><center>
+[
+ camera-ready paper 
+ <A HREF="../Papers/sigmod04sec-cam.pdf"><i>(pdf)</i></a> 
+ |
+ Wenfei's talk slides
+ <A HREF="../Talks/Others/sigmod04sec-slides.ppt"><i>(ppt)</i></a>
+]
+</center></h3>
+
+
+<BR><i>
+<b><u>Copyright &copy; 2004, Association for Computing Machinery, Inc. (ACM).</u></b>
+Permission to make digital/hard copy of all or part of this material without
+fee is granted provided that copies are not made or distributed for profit or
+commercial advantage, the ACM copyright/server notice, the title of the
+publication and its date appear, and notice is given that copying is by
+permission of the Association for Computing Machinery, Inc. (ACM).
+To copy otherwise, to republish, to post on servers or to redistribute to lists,
+requires prior specific permission and/or a fee.
+</i>
+
+
+<BR><BR><HR>
+
+
+</BODY>                                                                         
+</HTML>
+

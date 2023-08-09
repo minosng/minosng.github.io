@@ -1,0 +1,79 @@
+
+<HTML>
+<HEAD>
+   <TITLE>Minos Garofalakis -- VLDB'04</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#FFFFFF" >
+
+
+<HR>
+<h3><center>
+"Distributed Set-Expression Cardinality Estimation"
+</center></h3>
+<h4><center>by 
+<A HREF="http://www.cs.cornell.edu/~asdas/">Abhinandan Das</A>,
+Sumit Ganguly,
+Minos Garofalakis, and
+<A HREF="http://www.bell-labs.com/user/rastogi/">Rajeev Rastogi</A>.
+<BR>
+<i>Proceedings of <A HREF="http://www.vldb04.org/">VLDB'2004</A></i>,
+Toronto, Canada, August 2004.
+</center></h4>
+<BR><HR>
+
+
+<b><h4>Abstract</h4></b>
+We consider the problem of estimating set-expression cardinality
+in a <i>distributed streaming</i> environment
+where rapid update streams originating at remote sites are
+continually transmitted to a central processing system.
+At the core of our
+algorithmic solutions for answering set-expression
+cardinality queries
+are two novel techniques for lowering data communication
+costs without sacrificing answer precision. Our first technique
+exploits global knowledge of the distribution of certain
+frequently occurring stream elements to significantly reduce the
+transmission of element state information to the central site.
+Our second technical contribution involves a novel way of capturing the
+semantics of the input set expression in a boolean logic formula,
+and using models (of the formula) to determine whether
+an element state change at a remote site can affect the set expression
+result.
+Results of our experimental study with real-life as
+well as synthetic data sets indicate that our distributed
+set-expression cardinality estimation algorithms achieve
+substantial reductions in message traffic compared to naive approaches
+that provide the same accuracy guarantees.
+
+
+
+<BR>
+<h3><center>
+[
+ camera-ready paper
+ <A HREF="../Papers/vldb04-cam.pdf"><i>(pdf)</i></a> 
+ |
+ Abhinandan's talk slides
+ <A HREF="../Talks/Others/vldb04-slides.ppt"><i>(ppt)</i></a>
+]
+</center></h3>
+
+
+<BR><i>
+<b><u>Copyright &copy; 2004, VLDB Endowment.</u></b>
+Permission to copy without fee all or part of this material is granted provided
+that the copies are not made or distributed for direct commercial advantage, the
+VLDB copyright notice and the title of the publication and its date appear, and
+notice is given that copying is by permission of the Very Large Data Base
+Endowment.  To copy otherwise, or to republish, requires a fee and/or special
+permission from the Endowment.
+</i>
+
+
+<BR><BR><HR>
+
+
+</BODY>                                                                         
+</HTML>
+

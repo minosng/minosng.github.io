@@ -1,0 +1,87 @@
+
+<HTML>
+<HEAD>
+   <TITLE>Minos Garofalakis -- SIGMOD'02 (WAVELETS)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#FFFFFF" >
+
+<HR>
+<h3><center>"Wavelet Synopses with Error Guarantees"</center></h3>
+<h4><center>by 
+Minos Garofalakis and
+<A HREF="http://www.pittsburgh.intel-research.net/people/gibbons.html">Phillip B. Gibbons</A>.<BR>
+<i>Proceedings of <A HREF="http://www-db.cs.wisc.edu/sigmodpods2002/">ACM SIGMOD'2002</A></i>,
+Madison, Wisconsin, June 2002, pp. 476-487.<BR>
+<i><font color=red>[** Invited to
+<A HREF="http://www.acm.org/tods/"><font color=red>ACM Transactions on Database Systems</font></A> **]</font></i>
+</center></h4>
+<BR><HR>
+
+
+<b><h4>Abstract</h4></b>
+Recent work has demonstrated the effectiveness of the wavelet
+decomposition in reducing large amounts of data to compact sets
+of wavelet coefficients (termed "wavelet synopses") that can
+be used to provide fast and reasonably accurate approximate answers to queries.
+A major criticism of such techniques is that unlike, for example,
+random sampling, conventional wavelet synopses do not provide informative
+error guarantees on the accuracy of individual approximate answers.
+In fact, as this paper demonstrates, errors can vary widely
+(without bound) and unpredictably, even for identical queries on
+nearly-identical values in distinct parts of the data.
+This lack of error guarantees severely limits the practicality of
+traditional wavelets as an approximate query-processing tool, because
+users have no idea of the quality of any particular approximate
+answer.
+In this paper, we introduce <i>Probabilistic Wavelet Synopses</i>, the first
+wavelet-based data reduction technique with guarantees on the accuracy
+of individual approximate answers.  Whereas earlier approaches rely on
+deterministic thresholding for selecting a set of "good" wavelet
+coefficients, our technique is based on a novel, probabilistic
+thresholding scheme that assigns each coefficient a probability of
+being retained based on its importance to the reconstruction of
+individual data values, and then flips coins to select the
+synopsis. We show how our scheme avoids the above pitfalls of
+deterministic thresholding, providing highly-accurate answers for
+individual data values in a data vector.  We propose several novel
+optimization algorithms for tuning our probabilistic thresholding
+scheme to minimize desired error metrics.  Experimental results on
+real-world and synthetic data sets evaluate these algorithms, and
+demonstrate the effectiveness of our probabilistic wavelet synopses in
+providing fast, highly-accurate answers with error guarantees.
+
+<BR>
+<h3><center>
+[
+ camera-ready paper
+ <A HREF="../Papers/sigmod02wav-cam.pdf"><i>(pdf)</i></a> 
+ <A HREF="../Papers/sigmod02wav-cam.ps.gz"><i>(ps.gz)</i></a>
+ |
+ journal version
+ <A HREF="../Papers/tods04.pdf"><i>(pdf)</i></a>
+ (in ACM TODS)
+ |
+ my talk slides
+ <A HREF="../Talks/sigmod02wav-slides.ppt"><i>(ppt)</i></a>
+]
+</center></h3>
+
+
+<BR><i>
+<b><u>Copyright &copy; 2002, Association for Computing Machinery, Inc. (ACM).</u></b>
+Permission to make digital/hard copy of all or part of this material without
+fee is granted provided that copies are not made or distributed for profit or
+commercial advantage, the ACM copyright/server notice, the title of the
+publication and its date appear, and notice is given that copying is by
+permission of the Association for Computing Machinery, Inc. (ACM).
+To copy otherwise, to republish, to post on servers or to redistribute to lists,
+requires prior specific permission and/or a fee.
+</i>
+
+
+<BR><BR><HR>
+
+
+</BODY>                                                                         
+</HTML>
+

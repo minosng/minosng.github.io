@@ -1,0 +1,86 @@
+
+<HTML>
+<HEAD>
+   <TITLE>Minos Garofalakis -- EDBT'04 (SKIMMED SKETCHES)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#FFFFFF" >
+
+
+<HR>
+<h3><center>"Processing Data-Stream Join Aggregates Using Skimmed Sketches"</center></h3>
+<h4><center> by 
+Sumit Ganguly,
+Minos Garofalakis, and
+<A HREF="http://www.bell-labs.com/user/rastogi/">Rajeev Rastogi</A>.<BR>
+<i>Proceedings of <A HREF="http://www.edbt04.gr/">EDBT'2004</A></i>,
+Heraklion-Crete, Greece, March 2004, pp. 569-586.</center></h4>
+<BR><HR>
+
+
+
+
+<b><h4>Abstract</h4></b>
+There is a growing interest in on-line algorithms
+for analyzing and querying data streams, that examine each stream element
+only once and have at their disposal, only a limited amount of memory.
+Providing (perhaps approximate) answers to aggregate queries over such
+streams is a crucial requirement for many application environments;
+examples include large IP network installations where performance
+data from different parts of the network needs to be continuously
+collected and analyzed.
+In this paper, we present the <i>skimmed-sketch</i> algorithm for
+estimating the join size of two streams.
+(Our techniques also readily extend to other join-aggregate
+queries.)
+To the best of our knowledge, our
+skimmed-sketch technique is the first comprehensive join-size estimation
+algorithm to provide tight error guarantees while:
+(1) achieving the lower bound on the space required by any join-size
+estimation method in a streaming environment,
+(2) handling streams containing general update operations (inserts and deletes),
+(3) incurring a low logarithmic processing
+time per stream element, and
+(4) not assuming any a-priori knowledge of the frequency distribution for
+domain values.
+Our skimmed-sketch technique achieves all of the above by first skimming
+the dense frequencies from random hash-sketch summaries of the two streams.
+It then computes the subjoin
+size involving only dense frequencies directly, and uses the skimmed sketches
+only to approximate subjoin sizes for the non-dense frequencies.
+Results  from
+our experimental study with real-life as well as synthetic data streams
+indicate that our skimmed-sketch algorithm provides significantly more
+accurate estimates for join sizes compared to earlier
+sketch-based techniques.
+
+
+<BR>
+<h3><center>
+[
+camera-ready paper
+<A HREF="../Papers/edbt04skim-cam.pdf"><i>(pdf)</i></a> 
+ |
+my talk slides
+<A HREF="../Talks/edbt04skim-slides.ppt"><i>(ppt)</i></a>
+]
+</center></h3>
+
+
+
+<BR><i>
+<b><u>Copyright &copy; 2004, Springer-Verlag.</u></b>
+The original publication is available on LINK at
+<A HREF="http://link.springer.de">http://link.springer.de</A>. Please use the
+appropriate URL and/or DOI for the article in LINK. Articles disseminated via
+LINK are indexed, abstracted and referenced by many abstracting and information
+services, bibliographic networks, subscription agencies, library networks, and
+consortia.
+</i>
+
+
+<BR><BR><HR>
+
+
+</BODY>                                                                         
+</HTML>
+

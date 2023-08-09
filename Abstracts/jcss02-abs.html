@@ -1,0 +1,76 @@
+
+<HTML>
+<HEAD>
+   <TITLE>Minos Garofalakis -- JCSS'2002</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#FFFFFF" >
+
+
+
+<HR>
+<h3><center>"Competitive On-line Scheduling of Continuous-Media Streams"</center></h3>
+<h4><center>by Minos Garofalakis, <A HREF="http://www.di.uoa.gr/~yannis/">Yannis Ioannidis</A>,
+<A HREF="http://www.bell-labs.com/user/ozden/">Banu &Ouml;zden</A>, and
+<A HREF="http://www.cs.yale.edu/~avi/">Avi Silberschatz</A>.<BR> 
+<i><A HREF="http://www.sciencedirect.com/science/journal/00220000">Journal of Computer and Systems Sciences</A></i>,
+Vol. 64, No. 2, March 2002, pp. 219-248.
+</center></h4>
+<BR><HR>
+
+
+<b><h4>Abstract</h4></b>
+Multimedia applications require a guaranteed level of service for
+accessing continuous-media data.
+To obtain such guarantees, the database server where the data is residing
+must employ an admission control scheme to limit the number of clients that
+can be served concurrently.
+We investigate the problem of <i>on-line admission control</i>, where the decision
+on whether to accept or reject a request must be made without any knowledge about 
+future requests.
+Employing <i>competitive analysis</i> techniques, we  address the problem in 
+its most general form with the following key contributions: 
+(1) We prove a tight upper bound on the competitive ratio of the conventional 
+Work-Conserving (WC) policy, showing that it is within a factor of
+<math>(1 + &Delta;)/(1-&rho;)</math>
+of the optimal clairvoyant strategy,
+where <math>&Delta;</math> is the ratio of the maximum to minimum request length
+(i.e., time duration), and <math>&rho;</math> is the maximum fraction of
+the server's bandwidth that a request can demand;
+(2) we prove a lower bound of <math>&Omega;(log&Delta;/(1-&rho;))</math>
+on the competitive ratio
+of <i>any deterministic or randomized</i>  admission control scheme, demonstrating
+an exponential gap between greedy and  optimal on-line solutions;
+(3) we propose simple deterministic schemes based on the idea of 
+<i>bandwidth prepartitioning</i> that guarantee competitive ratios within a small
+constant factor of <math>&Omega;(log&Delta;/(1-&rho;))</math>
+(i.e., they are provably <i>near-optimal</i>)
+if <math>&rho; < 1/log&Delta;</math>; and,
+(4) we introduce a novel admission control policy that partitions the server 
+bandwidth based on the expected popularities of different request lengths and
+experimentally demonstrate its benefits compared to WC.
+
+
+<BR>
+<h3><center>
+[
+ paper
+ <A HREF="../Papers/jcss02.pdf"><i>(pdf)</i></a> 
+ <A HREF="../Papers/jcss02.ps.gz"><i>(ps.gz)</i></a> 
+]
+</center></h3>
+
+<BR>
+<i>
+<b><u>Copyright &copy; 2002, Academic Press.</u></b>
+This material has been published in the "Journal of Computer and Systems Sciences",
+the only definitive repository of the content that has been certified and accepted 
+after peer review. Copyright and all rights therein are retained by Academic Press. 
+This material may not be copied or reposted without explicit permission.
+</i>
+
+<BR><BR><HR>
+
+
+</BODY>                                                                         
+</HTML>
+

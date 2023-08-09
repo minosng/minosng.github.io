@@ -1,0 +1,75 @@
+
+<HTML>
+<HEAD>
+   <TITLE>Minos Garofalakis -- INFOCOM'01</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#FFFFFF" >
+
+
+
+<HR>
+<h3><center>"Efficiently Monitoring Bandwidth and Latency in IP Networks"</center></h3>
+<h4><center> by <A HREF="http://www.cs.kent.edu/~yuri/">Yuri Breitbart</A>,
+<A HREF="http://www.comp.nus.edu.sg/~chancy/">Chee-Yong Chan</A>,
+Minos Garofalakis,
+<A HREF="http://www.bell-labs.com/user/rastogi/">Rajeev Rastogi</A>, and
+<A HREF="http://www.cs.yale.edu/~avi/">Avi Silberschatz</A>.<BR> 
+<i>Proceedings of <A HREF="http://www.ieee-infocom.org/2001/">IEEE INFOCOM'2001</A></i>,
+Anchorage, Alaska, April 2001, pp. 933-942.</center></h4>
+<BR><HR>
+
+
+<b><h4>Abstract</h4></b>
+Effective monitoring of network utilization and performance indicators
+is a key enabling technology for proactive and reactive resource management,
+flexible accounting, and intelligent planning in next-generation IP networks.
+In this paper, we address the challenging problem of  efficiently
+monitoring bandwidth utilization and path latencies in an IP data network.
+Unlike earlier approaches, our measurement architecture assumes a single
+point-of-control in the network (corresponding to the Network Operations
+Center) that is responsible for gathering bandwidth and latency information
+using widely-deployed management tools, like SNMP, RMON/NetFlow, and 
+explicitly-routed IP probe packets.
+Our goal is to identify effective techniques for monitoring (a) bandwidth
+usage for a given set of links or packet flows, and (b) path latencies 
+for a given set of paths, while minimizing the overhead imposed by the
+management tools on the underlying production network.
+We demonstrate that minimizing overheads under our measurement model 
+gives rise to new combinatorial optimization problems, most of which 
+prove to be NP-hard.
+We also propose novel approximation algorithms for these optimization 
+problems and prove guaranteed upper bounds on their worst-case 
+performance.
+Our experimental results validate our approach, demonstrating the
+effectiveness of our novel monitoring algorithms over a wide range of
+network topologies.
+
+<BR>
+<h3><center>
+[
+camera-ready paper
+<A HREF="../Papers/infocom01-cam.pdf"><i>(pdf)</i></a>
+<A HREF="../Papers/infocom01-cam.ps.gz"><i>(ps.gz)</i></a>
+|
+Rajeev's talk slides
+<A HREF="../Talks/Others/infocom01-slides.ppt.gz"><i>(ppt.gz)</i></a>
+]
+</center></h3>
+
+
+<BR><i>
+<b><u>Copyright &copy; 2001, IEEE.</u></b>
+Personal use of this material is permitted. However, permission to 
+reprint/republish this material for advertising or promotional purposes or for
+creating new collective works for resale or redistribution to servers or lists,
+or to reuse any copyrighted component of this work in other works must be 
+obtained from the IEEE.
+</i>
+
+
+<BR><BR><HR>
+
+
+</BODY>                                                                         
+</HTML>
+

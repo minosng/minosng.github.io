@@ -1,0 +1,86 @@
+
+<HTML>
+<HEAD>
+   <TITLE>Minos N. Garofalakis -- PODS'98</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#FFFFFF" >
+
+
+
+<HR>
+<h3><center>"Throughput-Competitive Admission Control for Continuous Media Databases"</center></h3>
+<h4><center>by Minos N. Garofalakis, <A HREF="http://www.di.uoa.gr/~yannis/">Yannis E. Ioannidis</A>,
+<A HREF="http://www.bell-labs.com/user/ozden/">Banu &Ouml;zden</A>, and
+<A HREF="http://www.cs.yale.edu/~avi/">Avi Silberschatz</A>.<BR> 
+<i>Proceedings of <A HREF="http://www.boeing.com/special/sigmod98/">ACM PODS'98</A></i>,
+Seattle, Washington, June 1998, pp. 79-88.</center></h4>
+<BR><HR>
+
+
+<b><h4>Abstract</h4></b>
+Multimedia applications require a guaranteed level of service for
+accessing Continuous Media (CM) data, such as video and audio.
+To obtain such guarantees, the database server where the data is residing
+must employ an admission control scheme to limit the number of clients that
+can be served concurrently.
+We investigate the problem of <i>on-line admission control</i> where the decision
+on whether to accept or reject a request must be made without any knowledge about
+future requests.
+Employing <i>competitive analysis</i> techniques, we  address the problem in
+its most general form with the following key contributions:
+(1) we prove a tight upper bound on the competitive ratio of the conventional
+Work-Conserving (WC) policy, showing that it is within a factor of
+<math>(1 + &Delta;)/(1-&rho;)</math>
+of the optimal clairvoyant strategy that knows the entire request sequence in
+advance, where <math>&Delta;</math> is the ratio of the maximum to minimum 
+request length (that is, time duration), and 
+<math>&rho;</math> is the maximum fraction of the server's
+bandwidth that a request can demand;
+(2) we prove a lower bound of <math>&Omega;(log&Delta;/(1-&rho;))</math>
+on the competitive ratio
+of <i>any deterministic or randomized</i>  admission control scheme, demonstrating
+an exponential gap between greedy and  optimal on-line solutions;
+(3) we propose simple deterministic schemes based on the idea of
+<i>bandwidth prepartitioning</i> that guarantee competitive ratios within a small
+constant factor of <math>log&Delta;</math>  (i.e., they are <i>near-optimal</i>)
+for sufficiently large server bandwidth;
+(4) we introduce a novel admission control policy that partitions the server
+bandwidth based on the expected popularities of different request lengths and
+present a set of preliminary experimental results that demonstrate the benefits
+of our policy compared to WC.
+We believe that our results offer new  insights to other optimization
+problems that arise in CM data management, including
+data placement and load balancing in distributed CM databases.
+
+<BR>
+<h3><center>
+[
+ camera-ready paper
+ <A HREF="../Papers/pods98-cam.pdf"><i>(pdf)</i></a>
+ <A HREF="../Papers/pods98-cam.ps.gz"><i>(ps.gz)</i></a>
+ |
+ <A HREF="jcss02-abs.html"><i>journal version</i></a> (in JCSS) 
+ |
+ my talk slides
+ <A HREF="../Talks/pods98-slides.ps.gz"><i>(ps.gz)</i></a>
+]
+</center></h3>
+
+<BR>
+<i>
+<b><u>Copyright &copy; 1998, Association for Computing Machinery, Inc. (ACM).</u></b>
+Permission to make digital/ hard copy of all or part of this material without
+fee is granted provided that copies are not made or distributed for profit or
+commercial advantage, the ACM copyright/server notice, the title of the 
+publication and its date appear, and notice is given that copying is by
+permission of the Association for Computing Machinery, Inc. (ACM). 
+To copy otherwise, to republish, to post on servers or to redistribute to lists,
+requires prior specific permission and/or a fee.
+</i>
+
+<BR><BR><HR>
+
+
+</BODY>                                                                         
+</HTML>
+

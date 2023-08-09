@@ -1,0 +1,77 @@
+
+<HTML>
+<HEAD>
+   <TITLE>Minos Garofalakis -- SIGMOD'01 (DBHIST)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#FFFFFF" >
+
+
+<HR>
+<h3><center>"Independence is Good: Dependency-Based Histogram Synopses for High-Dimensional Data"</center></h3>
+<h4><center>by 
+<A HREF="http://www.cs.umd.edu/~amol/">Amol Deshpande</A>,
+Minos Garofalakis, and
+<A HREF="http://www.bell-labs.com/user/rastogi/">Rajeev Rastogi</A>.<BR>
+<i>Proceedings of <A HREF="http://www.cs.ucsb.edu/conferences/sigmod2001/">ACM SIGMOD'2001</A></i>,
+Santa Barbara, California, May 2001, pp. 199-210.</center></h4>
+<BR><HR>
+
+
+<b><h4>Abstract</h4></b>
+Approximating the joint data distribution of a multi-dimensional data 
+set through a compact and accurate histogram synopsis is a fundamental
+problem arising in numerous practical scenarios, including  query 
+optimization and approximate query answering. 
+Existing solutions either rely on simplistic independence assumptions
+or try to directly approximate the full joint data distribution over 
+the complete set of attributes.
+Unfortunately, both approaches are doomed to fail for high-dimensional 
+data sets with complex correlation patterns between attributes.
+In this paper, we propose a novel approach to histogram-based synopses
+that employs the solid foundation of statistical interaction models to
+explicitly identify and exploit the statistical characteristics of the
+data.
+Abstractly, our key idea is to break the synopsis into 
+(1) a statistical interaction model that accurately captures significant
+correlation  and independence patterns in  data, and
+(2) a collection of histograms on low-dimensional marginals that, based on
+the model, can provide accurate approximations of the overall joint data 
+distribution.
+Extensive experimental results with several real-life data sets
+verify the effectiveness of our approach.
+An important aspect of our general, model-based methodology is that it can be
+used to enhance the performance of other synopsis techniques that are based
+on data-space partitioning (e.g., wavelets)  by providing an effective tool
+to deal with the "dimensionality curse".
+
+<BR>
+<h3><center>
+[
+ camera-ready paper
+ <A HREF="../Papers/sigmod01dbhist-cam.pdf"><i>(pdf)</i></a>
+ <A HREF="../Papers/sigmod01dbhist-cam.ps.gz"><i>(ps.gz)</i></a>
+ |
+ Amol's talk slides
+ <A HREF="../Talks/Others/sigmod01dbhist-slides.ppt.gz"><i>(ppt.gz)</i></a>
+]
+</center></h3>
+
+
+<BR><i>
+<b><u>Copyright &copy; 2001, Association for Computing Machinery, Inc. (ACM).</u></b>
+Permission to make digital/hard copy of all or part of this material without
+fee is granted provided that copies are not made or distributed for profit or
+commercial advantage, the ACM copyright/server notice, the title of the
+publication and its date appear, and notice is given that copying is by
+permission of the Association for Computing Machinery, Inc. (ACM).
+To copy otherwise, to republish, to post on servers or to redistribute to lists,
+requires prior specific permission and/or a fee.
+</i>
+
+
+<BR><BR><HR>
+
+
+</BODY>                                                                         
+</HTML>
+

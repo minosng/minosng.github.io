@@ -1,0 +1,91 @@
+
+<HTML>
+<HEAD>
+   <TITLE>Minos Garofalakis -- SIGMOD'04 (APPROXIMATE XML QUERYING)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#FFFFFF" >
+
+<HR>
+<h3><center>"Approximate XML Query Answers"</center></h3>
+<h4><center>by 
+<A HREF="http://www.cs.ucsc.edu/~alkis/">Neoklis Polyzotis</A>,
+Minos Garofalakis, and
+<A HREF="http://www.di.uoa.gr/~yannis/">Yannis Ioannidis</A>.<BR>
+<i>Proceedings of <A HREF="http://www.sciences.univ-nantes.fr/irin/SIGMODPODS04/">ACM SIGMOD'2004</A></i>,
+Paris, France, June 2004, pp. 263-274.
+</center></h4>
+<BR><HR>
+
+
+<b><h4>Abstract</h4></b>
+The rapid adoption of XML as the standard for data representation and
+exchange foreshadows a massive increase in the amounts of XML data
+collected, maintained, and queried over the Internet or in large
+corporate data-stores. Inevitably, this will result in the development
+of on-line decision support systems, where users and analysts 
+interactively explore large XML data sets through a declarative query
+interface (e.g., XQuery or XSLT). Given the importance of remaining
+interactive, such on-line systems can employ approximate query answers
+as an effective mechanism for reducing response time and providing 
+users with early feedback. This approach has been successfully used 
+in relational systems and it becomes even more compelling in the 
+XML world, where the evaluation of complex queries over massive 
+tree-structured data is inherently more expensive. 
+
+In this paper, we initiate a study of approximate query answering
+techniques for large XML databases. Our approach is based on a novel,
+conceptually simple, yet very effective XML-summarization mechanism:
+TreeSketch synopses.  We demonstrate that,
+unlike earlier techniques focusing solely on selectivity estimation,
+our TreeSketch synopses are much more effective in capturing the complete 
+tree structure of the underlying XML database.  We propose novel
+construction algorithms for building TreeSketch summaries of limited size,
+and describe schemes for processing   
+general XML twig queries over a concise TreeSketch in order to produce very
+fast, approximate <i>tree-structured query answers</i>.  To quantify
+the quality of such approximate answers, we propose a novel, intuitive
+error metric that captures the quality of the approximation in terms
+of both the overall structure of the XML tree and the distribution 
+of document edges. Experimental results on real-life and synthetic
+data sets verify the effectiveness of our TreeSketch synopses in producing
+fast, accurate approximate answers and demonstrate their benefits
+over previously proposed techniques that focus solely on selectivity
+estimation. In particular, TreeSketches yield faster, more accurate
+approximate answers and selectivity estimates, and are more efficient
+to construct.  To the best of our knowledge, ours is the first work
+to address the timely problem of producing fast, approximate 
+tree-structured answers for complex XML queries.  
+
+
+
+
+<BR>
+<h3><center>
+[
+ camera-ready paper 
+ <A HREF="../Papers/sigmod04approx-cam.pdf"><i>(pdf)</i></a> 
+ |
+ Alkis' talk slides
+ <A HREF="../Talks/Others/sigmod04approx-slides.ppt"><i>(ppt)</i></a>
+]
+</center></h3>
+
+
+<BR><i>
+<b><u>Copyright &copy; 2004, Association for Computing Machinery, Inc. (ACM).</u></b>
+Permission to make digital/hard copy of all or part of this material without
+fee is granted provided that copies are not made or distributed for profit or
+commercial advantage, the ACM copyright/server notice, the title of the
+publication and its date appear, and notice is given that copying is by
+permission of the Association for Computing Machinery, Inc. (ACM).
+To copy otherwise, to republish, to post on servers or to redistribute to lists,
+requires prior specific permission and/or a fee.
+</i>
+
+
+<BR><BR><HR>
+
+
+</BODY>                                                                         
+</HTML>
+

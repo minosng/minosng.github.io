@@ -1,0 +1,78 @@
+
+<HTML>
+<HEAD>
+   <TITLE>Minos Garofalakis -- SIGMOD'02 (STREAMS)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#FFFFFF" >
+
+<HR>
+<h3><center>"Processing Complex Aggregate Queries over Data Streams"</center></h3>
+<h4><center>by 
+<A HREF="http://www.cise.ufl.edu/~adobra/">Alin Dobra</A>,
+Minos Garofalakis,
+<A HREF="http://www.cs.cornell.edu/johannes/">Johannes Gehrke</A>, and
+<A HREF="http://www.bell-labs.com/user/rastogi/">Rajeev Rastogi</A>.<BR>
+<i>Proceedings of <A HREF="http://www-db.cs.wisc.edu/sigmodpods2002/">ACM SIGMOD'2002</A></i>,
+Madison, Wisconsin, June 2002, pp. 61-72.
+</center></h4>
+<BR><HR>
+
+
+<b><h4>Abstract</h4></b>
+Recent years have witnessed an increasing interest in designing algorithms 
+for querying and analyzing streaming data (i.e., data that is seen only once
+in a fixed order) with only limited memory.
+Providing (perhaps approximate) answers to queries over such continuous data
+streams is a crucial requirement for many application environments; examples include
+large telecom and IP network installations where performance data from different
+parts of the network needs to be continuously collected and analyzed.
+In this paper, 
+we consider the problem of approximately answering general aggregate SQL queries over
+continuous data streams with limited memory. Our method relies on randomizing techniques
+that compute small "sketch" summaries of the streams that can then be used to provide
+approximate answers to aggregate queries 
+with provable guarantees on the approximation error. We also
+demonstrate how existing statistical information on the base data 
+(e.g., histograms) can be used in the proposed framework to improve 
+the quality of the approximation provided by our algorithms.
+The key idea is to intelligently partition the domain of the underlying
+attribute(s) and, thus, decompose the sketching problem in a way that
+provably tightens our guarantees.  
+Results of our experimental study with real-life as well as synthetic data
+streams indicate that sketches provide significantly more accurate
+answers compared to histograms for aggregate queries. This is especially
+true when our domain partitioning methods are employed to 
+further boost the accuracy of the final estimates. 
+
+
+<BR>
+<h3><center>
+[
+ camera-ready paper 
+ <A HREF="../Papers/sigmod02stream-cam.pdf"><i>(pdf)</i></a> 
+ <A HREF="../Papers/sigmod02stream-cam.ps.gz"><i>(ps.gz)</i></a>
+ |
+ Alin's talk slides 
+ <A HREF="../Talks/Others/sigmod02stream-slides.pdf"><i>(pdf)</i></a>
+]
+</center></h3>
+
+
+<BR><i>
+<b><u>Copyright &copy; 2002, Association for Computing Machinery, Inc. (ACM).</u></b>
+Permission to make digital/hard copy of all or part of this material without
+fee is granted provided that copies are not made or distributed for profit or
+commercial advantage, the ACM copyright/server notice, the title of the
+publication and its date appear, and notice is given that copying is by
+permission of the Association for Computing Machinery, Inc. (ACM).
+To copy otherwise, to republish, to post on servers or to redistribute to lists,
+requires prior specific permission and/or a fee.
+</i>
+
+
+<BR><BR><HR>
+
+
+</BODY>                                                                         
+</HTML>
+

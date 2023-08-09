@@ -1,0 +1,87 @@
+
+<HTML>
+<HEAD>
+   <TITLE>Minos Garofalakis -- VLDB'02 (TREE PATTERNS)</TITLE>
+</HEAD>
+<BODY text="#000000" bgcolor="#FFFFFF" >
+
+
+<HR>
+<h3><center>
+"Tree Pattern Aggregation for Scalable XML Data Dissemination"
+</center></h3>
+<h4><center>by 
+<A HREF="http://www.comp.nus.edu.sg/~chancy/">Chee-Yong Chan</A>,
+<A HREF="http://www.bell-labs.com/user/wenfei/">Wenfei Fan</A>,
+<A HREF="http://members.unine.ch/pascal.felber/">Pascal Felber</A>,
+Minos Garofalakis, and
+<A HREF="http://www.bell-labs.com/user/rastogi/">Rajeev Rastogi</A>.
+<BR>
+<i>Proceedings of <A HREF="http://www.cs.ust.hk/vldb2002/">VLDB'2002</A></i>,
+Hong Kong, China, August 2002, pp. 826-837.
+</center></h4>
+<BR><HR>
+
+
+<b><h4>Abstract</h4></b>
+With the rapid growth of XML-document traffic on the Internet, scalable
+content-based dissemination of XML documents to a large, dynamic group of
+consumers has become an important research challenge.
+To indicate the type of content that they are interested in, data consumers 
+typically specify their subscriptions using some XML pattern specification 
+language (e.g., XPath).
+Given the large volume of subscribers, system scalability and efficiency 
+mandate the ability to <i>aggregate</i>
+the set of consumer subscriptions to a smaller set of content specifications,
+so as to both reduce their storage-space requirements as well as speed up the
+document-subscription matching process.
+In this paper, we provide the first systematic study of subscription aggregation 
+where subscriptions are specified with <i>tree patterns</i> (an important subclass 
+of XPath expressions).
+The main challenge is to aggregate an input set of tree patterns into a 
+smaller set of generalized tree patterns such that: (1) a given <i>space constraint</i>
+on the total size of the subscriptions is met, and (2) the <i>loss in precision</i>
+(due to aggregation) during document filtering  is minimized.
+We propose an efficient tree-pattern aggregation algorithm that makes effective
+use of document-distribution statistics in order to compute a <i>precise</i>
+set of aggregate tree patterns within the allotted space budget.
+As part of our solution, we also develop several novel algorithms for tree-pattern
+containment and minimization, as well as "least-upper-bound" computation for a set
+of tree patterns.
+These results are of interest in their own right, and can prove useful in other 
+domains, such as XML query optimization.
+Extensive results from a prototype implementation validate  
+our approach.
+
+
+
+<BR>
+<h3><center>
+[
+ camera-ready paper
+ <A HREF="../Papers/vldb02treepat-cam.pdf"><i>(pdf)</i></a> 
+ <A HREF="../Papers/vldb02treepat-cam.ps.gz"><i>(ps.gz)</i></a> 
+ |
+ my talk slides 
+ <A HREF="../Talks/vldb02treepat-slides.ppt"><i>(ppt)</i></a>
+]
+</center></h3>
+
+
+<BR><i>
+<b><u>Copyright &copy; 2002, VLDB Endowment.</u></b>
+Permission to copy without fee all or part of this material is granted provided
+that the copies are not made or distributed for direct commercial advantage, the
+VLDB copyright notice and the title of the publication and its date appear, and
+notice is given that copying is by permission of the Very Large Data Base
+Endowment.  To copy otherwise, or to republish, requires a fee and/or special
+permission from the Endowment.
+</i>
+
+
+<BR><BR><HR>
+
+
+</BODY>                                                                         
+</HTML>
+
